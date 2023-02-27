@@ -1,2 +1,5 @@
-# data-structure-algorithm
-数据结构和算法
+#数据结构和算法
+
+- B站左程云老师算法课程
+- leetcode刷题
+- 日常练习
