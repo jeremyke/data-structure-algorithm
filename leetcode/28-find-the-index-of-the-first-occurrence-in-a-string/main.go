@@ -32,5 +32,15 @@ func strStr(haystack string, needle string) int {
 
 func main() {
 	haystack, needle := "mississippi", "issip"
-	fmt.Println(strStr(haystack, needle))
+	fmt.Println(strStrGPT(haystack, needle))
+}
+
+func strStrGPT(haystack string, needle string) int {
+	n, m := len(haystack), len(needle)
+	for i := 0; i+m <= n; i++ {
+		if haystack[i:i+m] == needle {
+			return i
+		}
+	}
+	return -1
 }
