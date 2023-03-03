@@ -40,7 +40,6 @@ func (this *LRUCache) Put(key int, value int) {
 		this.DataMap[key] = value
 	} else {
 		if len(this.DataMap) == this.Capacity {
-			delete()
 
 		}
 		this.Capacity++
@@ -70,11 +69,11 @@ func (this *LRUCache) Top(key int) {
 
 }
 
-func (this *LRUCache) DelLast() {
-	head := this.DataList
-	tail := this.DataList
-	for tail.Next != nil {
-
-	}
-
-}
+//func (this *LRUCache) DelLast() {
+//	head := this.DataList
+//	tail := this.DataList
+//	for tail.Next != nil {
+//
+//	}
+//
+//}
